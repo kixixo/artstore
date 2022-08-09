@@ -1,0 +1,330 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, .1);
+}
+
+body {
+    font: 100% arial, sans-serif;
+    text-align: center;
+    margin: auto !important;
+    width: 1240px;
+    max-width: 98%;
+}
+
+p {
+    margin: 0 10px 10px
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    background-color: #F3F2ED;
+}
+
+header h1 {
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+header img {
+    width: 15%;
+}
+
+div p {
+    line-height: 1.4
+}
+
+nav {
+    float: left;
+    width: 100%;
+    background: #F6F0E0;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+    position: relative;
+}
+
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+#nav_menu ul li.products ul li ul {
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+#nav_menu ul li:hover>ul {
+    display: block;
+}
+
+#nav_menu>ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 176px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #F6F0E0;
+    color: #1a1917;
+    font-weight: bold;
+}
+
+#nav_menu ul li.lastitem a {
+    width: 178px;
+}
+
+#nav_menu ul li a.active {
+    color: yellow;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+    background-color: gray;
+}
+
+
+/* Navigation styling ends here */
+
+footer p {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    background: #F3F2ED;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+aside ul li {
+    float: left;
+}
+
+aside ul ul {
+    display: none;
+    position: relative;
+    top: 100%;
+}
+
+aside ul ul li {
+    float: none;
+    position: relative;
+}
+
+aside ul ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+aside ul li.products ul li ul {
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+aside ul li:hover>ul {
+    display: block;
+}
+
+aside>ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+aside ul li a {
+    text-align: center;
+    display: block;
+    width: 176px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #F3F2ED;
+    color: black;
+    font-weight: bold;
+}
+
+aside ul li a:hover,
+aside ul li a:focus {
+    background-color: gray;
+}
+
+section {
+    width: 70%;
+    margin: 20px;
+    float: left;
+    text-align: left;
+}
+
+#wrapper {
+    float: left;
+    width: 100%
+}
+
+nav {
+    float: left;
+    width: 100%;
+    background: #F6F0E0;
+}
+
+fieldset label {
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+}
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+
+fieldset p {
+    clear: both;
+}
+
+.subscribe input[type="checkbox"] {
+    float: left;
+}
+
+.survey label {
+    font-size: 100%;
+    font-weight: 100;
+    display: inline;
+}
+
+.survey input[type="checkbox"] {
+    width: auto;
+}
+
+legend {
+    color: #931420;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+label,
+input,
+select {
+    font-size: 90%;
+}
+
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+
+input,
+select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+input:required,
+input[required] {
+    border: 3px solid red;
+}
+
+input:valid {
+    border: lpx solid black;
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+br {
+    clear: both;
+}
+
+#buttons input {
+    width: lOem;
+}
+
+footer {
+    clear: both;
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: -webkit-sticky;
+    position: static;
+    width: 100%;
+    background: #faedab;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'BergamoProRegular', georgia, serif;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+h1,
+h1 a {
+    font-size: 33px;
+    color: #333230;
+    line-height: 44px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

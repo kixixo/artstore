@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/subscribe.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo: "#mobile_menu"
+            });
+        });
+    </script>
+    <title>Art Store</title>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo" width="150px">
+        <h1>Miirakulous Art Store</h1>
+    </header>
+
+    <nav id="mobile_menu">
+
+    </nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a href="products.html">Product</a>
+                <ul>
+                    <li><a href="subpages/digital.html">Digital</a></li>
+                    <li><a href="subpages/graphites.html">Graphite</a></li>
+                    <li><a href="subpages/painting.html">Paintings</a>
+                        <ul>
+                            <li><a href="subpages/subsubpages/oils.html">Oils</a></li>
+                            <li><a href="subpages/subsubpages/acrylics.html">Acrylic</a></li>
+                            <li><a href="subpages/subsubpages/watercolors.html">Water Colors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li><a href="product.html">Product</a>
+                    <ul>
+                        <li><a href="subpages/digital.html">Digital</a></li>
+                        <li><a href="subpages/graphites.html">Graphite</a></li>
+                        <li><a href="subpages/painting.html">Paintings</a>
+                            <ul>
+                                <li><a href="subpages/subsubpages/oils.html">Oils</a></li>
+                                <li><a href="subpages/subsubpages/acrylics.html">Acrylic</a></li>
+                                <li><a href="subpages/subsubpages/watercolors.html">Water Colors</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1>Lorem ipsum dolor sit amet.</h1>
+
+            <figure id="items">
+                <figcaption>
+                    <h2>The Luncheon Table</h2>
+                </figcaption>
+
+            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th id="hdr_thumbnail" scope="col" class="left">Thumbnail</th>
+                        <th id="hdr_stock" scope="col">Stock</th>
+                        <th id="hdr_price" scope="col">Price</th>
+                        <th id="hdr_buy" scope="col">Buy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="hdr_thumbnail">
+                            <figure><img class="prod" src="../images/logol.png" alt="Dana White" width="20%">
+                                <figcaption>
+                                    <p>Dana White</p>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td headers="hdr_stock" class="inline">In stock</td>
+                        <td headers="hdr_price" class="inline">$25</td>
+                        <td headers="hdr_buy" class="inline"><button class="cart">Add to cart</button></td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_thumbnail">
+                            <figure><img src="../images/jackie brown.jpg" alt="Jackie Brown" width="20%">
+                                <figcaption>
+                                    <p>Jackie Brown</p>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td headers="hdr_stock" class="inline">In stock</td>
+                        <td headers="hdr_price" class="inline">$25</td>
+                        <td headers="hdr_buy" class="inline"><button class="cart">Add to cart</button></td>
+                    </tr>
+                    <tr>
+                        <td headers="hdr_thumbnail">
+                            <figure><img src="../images/angelina Jolie.jpg" alt="angelina jolie" width="20%">
+                                <figcaption>
+                                    <p>Angelina Jolie</p>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td headers="hdr_stock" class="inline">In stock</td>
+                        <td headers="hdr_price" class="inline">$25</td>
+                        <td headers="hdr_buy" class="inline"><button class="cart">Add to cart</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Conestoga College - Temiloluwa OLUGBANMU 8770513 | PROG8540 - Web Foundations Major Assignment #2</p>
+        <p>Developed, Designed &amp; Maintained by Miirakulous Tech</p>
+    </footer>
+
+</body>
+
+</html>

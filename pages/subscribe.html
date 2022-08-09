@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/subscribe.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({
+                prependTo: "#mobile_menu"
+            });
+        });
+    </script>
+    <title>Art Store</title>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo">
+        <h1>Miirakulous Art Store</h1>
+    </header>
+
+
+    <nav id="mobile_menu">
+
+    </nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a href="products.html">Product</a>
+                <ul>
+                    <li><a href="subpages/digital.html">Digital</a></li>
+                    <li><a href="subpages/graphites.html">Graphite</a></li>
+                    <li><a href="subpages/painting.html">Paintings</a>
+                        <ul>
+                            <li><a href="subpages/subsubpages/oils.html">Oils</a></li>
+                            <li><a href="subpages/subsubpages/acrylics.html">Acrylic</a></li>
+                            <li><a href="subpages/subsubpages/watercolors.html">Water Colors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li><a href="product.html">Product</a>
+                    <ul>
+                        <li><a href="subpages/digital.html">Digital</a></li>
+                        <li><a href="subpages/graphites.html">Graphite</a></li>
+                        <li><a href="subpages/painting.html">Paintings</a>
+                            <ul>
+                                <li><a href="subpages/subsubpages/oils.html">Oils</a></li>
+                                <li><a href="subpages/subsubpages/acrylics.html">Acrylic</a></li>
+                                <li><a href="subpages/subsubpages/watercolors.html">Water Colors</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </aside>
+        <section>
+            <form action="subscription.html" method="post">
+                <fieldset class="userInfo">
+                    <legend>User Information</legend>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="John" autofocus required><br>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Doe" required><br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="test@test.com" required><br>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phoneNumber" id="phone" placeholder="1 (123)-456-7890" required>
+                </fieldset>
+                <br>
+                <fieldset class="subscribe">
+                    <legend>Subscribe ?</legend>
+                    <label for="subscribe">Subscribe</label>
+                    <input type="email" name="subscribe" id="subscribe" placeholder="test@test.com" required>
+                    <p>Please enter your email address again to subscribe to my mailing list and be sure to get the best I've got to offer</p>
+                    <label for="mailList">Subscribe to mailing list?</label><input type="checkbox" name="mailList" id="mailList">
+                </fieldset>
+                <br>
+                <fieldset class="commissions">
+                    <legend>Commission an Artwork?</legend>
+                    <label for="commission_type">Commission Type:</label>
+                    <select name="ordering_type" id="ordering_type">
+				    	<option value="p">Painting</option>
+				    	<option value="d">Digital Art</option>
+				    	<option value="g">Graphite</option>
+				    	<option value="c">Charcoal</option>
+					</select>
+                </fieldset>
+                <fieldset class="survey">
+                    <legend>Survey</legend>
+                    <p>How did you find me?</p>
+                    <label for="youTube"><input type="checkbox" name="youTube" id="youTube"> YouTube</label>
+                    <label for="facebook"><input type="checkbox" name="facebook" id="facebook"> Facebook</label>
+                    <label for="instagram"><input type="checkbox" name="instagram" id="instagram"> Instagram</label>
+                    <label for="twitter"><input type="checkbox" name="twitter" id="twitter"> Twitter</label>
+                    <label for="google"><input type="checkbox" name="google" id="google"> Google</label>
+                    <label for="ad"><input type="checkbox" name="advert" id="ad"> Advertised</label>
+                    <label for="comment">Would you like to leave a comment?</label>
+                    <textarea rows="10" cols="70"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Submit Your Order</legend>
+                    <label>&nbsp;</label>
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset Fields"><br>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Conestoga College - Temiloluwa OLUGBANMU 8770513 | PROG8540 - Web Foundations Major Assignment #2</p>
+        <p>Developed, Designed &amp; Maintained by Miirakulous Tech</p>
+    </footer>
+
+</body>
+
+</html>
